@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--Язык неопределен - zxx -->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Настройка адаптива-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!--Заголовок-->
+	<title>Forms</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__content-kanzas">
+					<div class="page__container-kanzas">
+						<form action="" class="page__form form-kanzas">
+							<div class="form-kanzas__billing">
+								<h2 class="form-kanzas__title">Billing Details</h2>
+								<div class="form-kanzas__address address">
+									<input class="address__input" id="name" type="text" required placeholder="First name*">
+									<input class="address__input" type="text" required placeholder="Last name*">
+									<input class="address__input" type="text" required placeholder="Address*">
+									<input class="address__input" type="text" placeholder="Address line 2">
+									<select aria-required class="address__list" name="country" id="country" required>
+										<option disabled selected value="country">Country*</option>
+										<option value="ukraine">Ukraine</option>
+										<option value="uk">United Kingdom</option>
+										<option value="germany">Germany</option>
+									</select>
+									<input class="address__input" type="text" required placeholder="City/Town*">
+									<input class="address__input" type="text" required placeholder="Postcode / ZIP*">
+									<input class="address__input" type="tel" required placeholder="Phone*">
+									<input class="address__input" type="text" required placeholder="Postcode / ZIP*">
+									<input class="address__input" type="tel" required placeholder="Phone*">
+									<textarea class="address__additional" placeholder="Additional information"
+										name="additional-info" id="additional-info" cols="" rows=""></textarea>
+								</div>
+							</div>
+							<div class="form-kanzas__checkbox checkbox-address">
+								<input class="checkbox-address__input" type="checkbox" name="" id="create-account">
+								<label checked class="checkbox-address__label" for="create-account">Create Account</label>
+								<input class="checkbox-address__input" type="checkbox" name="" id="diff-address">
+								<label checked class="checkbox-address__label" for="diff-address">Ship to a different
+									address?</label>
+							</div>
+							<div class="form-kanzas__coupon coupon">
+								<h2 class="coupon__title">Apply Coupon to get discount!</h2>
+								<input placeholder="Coupon code" class="coupon__input" type="text" name="" id="">
+								<button class="coupon__btn" type="submit">Apply Code</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="page__content-crisp">
+					<div class="page__container-crisp">
+						<form action="" class="page__form form-crisp">
+							<div class="form-crisp__title">
+								<h2>Shipping Address</h2>
+							</div>
+							<div class="form-crisp__shipping">
+								<label for="email">Email Address *</label>
+								<input class="form-crisp__input" type="email" id="email">
+								<label for="password">Password</label>
+								<input class="form-crisp__input" type="password" id="password">
+								<label for="postal-code">Zip/Postal Code</label>
+								<input class="form-crisp__input" type="text" id="postal-code">
+							</div>
+							<div class="form-crisp__text">
+								You already have an account with us. Sign in or continue as guest.
+							</div>
+							<button class="form-crisp__btn" type="submit">login</button>
+							<div class="form-crisp__link-forgotting">
+								<a href="#">Forgot Your Password?</a>
+							</div>
+							<hr class="form__crisp-divide form__crisp-divide--margin ">
+							<div class="form-crisp__user-info">
+								<label for="email">First Name *</label>
+								<input required class="form-crisp__input" type="text" id="email">
+								<label for="email">Last Name *</label>
+								<input required class="form-crisp__input" type="text" id="email">
+								<label for="email">Company</label>
+								<input class="form-crisp__input" type="text" id="email">
+								<label for="email">Street Address *</label>
+								<input required class="form-crisp__input" type="text" id="email">
+								<label class="hidden" for="email">Street Address *</label>
+								<input class="form-crisp__input" type="text" id="email">
+								<label class="hidden" for="email">Street Address *</label>
+								<input class="form-crisp__input" type="text" id="email">
+								<label for="email">Country *</label>
+								<input required class="form-crisp__input" type="text" id="email">
+								<label for="select-region">State/Province *</label>
+								<select name="select-region" id="select-region">
+									<option disabled selected checked value="Region, state or province">Please select a region,
+										state or province</option>
+									<option value="">Sumy</option>
+									<option value="">Kyiv</option>
+									<option value="">Kharkiv</option>
+									<option value="">Ivano-Frankivsk</option>
+								</select>
+							</div>
+							<h2 class="form-crisp__title form-crisp__title-margin">Shipping Methods</h2>
+							<hr class="form__crisp-divide">
+							<div class="form-crisp__radio radio">
+								<div class="radio__cost">
+									<input type="radio" name="shipping-cost" id="5$">
+									<label class="radio__label" for="5$">$5.00</label>
+									<div class="radio__info">
+										<label for="5$">Fixed</label>
+										<label for="5$">Flat Rate</label>
+									</div>
+								</div>
+								<div class="radio__cost">
+									<hr class="form__crisp-divide form__crisp-divide--length">
+									<input type="radio" name="shipping-cost" id="10$">
+									<label checked class="radio__label" for="10$">$10.00</label>
+									<div class="radio__info">
+										<label for="10$">Table Rate</label>
+										<label for="10$">Best Way</label>
+									</div>
+								</div>
+								<!-- <div class="radio__cost">
+									<hr class="form__crisp-divide form__crisp-divide--length">
+									<input type="radio" name="shipping-cost" id="20$">
+									<label checked class="radio__label" for="20$">$20.00</label>
+									<div class="radio__info">
+										<label for="20$">Table Rate</label>
+										<label for="20$">Best Way</label>
+									</div>
+								</div> -->
+								<!-- <div class="radio__cost">
+									<hr class="form__crisp-divide form__crisp-divide--length">
+									<input type="radio" name="shipping-cost" id="15$">
+									<label checked class="radio__label" for="15$">$15.00</label>
+									<div class="radio__info">
+										<label for="15$">Table Rate</label>
+										<label for="15$">Best Way</label>
+									</div>
+								</div> -->
+							</div>
+							<div class="form__crisp-submit">
+								<button class="form-crisp__btn" type="submit">Next</button>
+								<button class="form-crisp__btn-back" type="disabled">back</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+
+		</footer>
+
+	</div>
+</body>
+
+</html>
